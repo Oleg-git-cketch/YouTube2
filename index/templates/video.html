@@ -17,8 +17,12 @@
         <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a></li>
       </ul>
     </header>
+    <img src="{{ video.video_content.url }}" width="350" height="350" alt="{{ video.video_title }}">
     <h1 class="text-white">{{ video.video_title }}</h1>
-    <img src="{{ video.video_video.url }}" width="350" height="350" alt="{{ video.video_title }}">
+    <h4 class="text-white">Автор: {{ video.user }}</h4>
+    <h5 class="text-white">{{ video.created_at }}</h5>
+    <h5 class="text-white">Likes: {{ video.like }}</h5><h5 class="text-white">Dislikes: {{ video.dislike }}</h5>
+
     <br>
 </div>
 </body>

@@ -24,6 +24,8 @@
             <img src="{{ v.video_content.url }}" width="200" height="200" alt="{{ v }}">
         </div>
         <h3 class="fs-2 text-white">{{ v.video_title }}</h3>
+          <h6 class="text-white">{{ v.created_at }}</h6>
+          <h5 class="text-white">Автор: {{ v.user }}</h5>
         <a href="/video/{{ v.id }}" class="icon-link">
           Подробнее
         </a>

@@ -5,6 +5,7 @@ from django.db import models
 class Video(models.Model):
     video_title = models.CharField(max_length=128)
     video_content = models.ImageField(upload_to='media')
+    cover_video = models.FileField(upload_to='videos/')
     user = models.TextField()
     like = models.TextField()
     dislike = models.TextField()
